@@ -1,5 +1,6 @@
 AppView = require './views/AppView'
 NotificationModule = require './modules/notification/NotificationModule'
+TodoModule = require './modules/todo/TodoModule'
 
 class App extends Backbone.Marionette.Application
   initialize: ->
