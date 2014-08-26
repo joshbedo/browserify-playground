@@ -1,4 +1,4 @@
-browserify-playground
+marionetteify-playground
 =====================
 
-A playground for browserify modules
+A playground for marionetteify browserify modules
