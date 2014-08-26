@@ -44,7 +44,6 @@ gulp.task('vendor-styles', function() {
 gulp.task('vendor-scripts', function() {
   stream = gulp.src([
       paths.vendor + 'scripts/jquery.js',
-      paths.vendor + 'scripts/bootstrap.js',
       paths.vendor + 'scripts/underscore.js',
       paths.vendor + 'scripts/backbone.js',
       paths.vendor + 'scripts/backbone.syphon.js',

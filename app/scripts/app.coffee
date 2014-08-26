@@ -6,8 +6,6 @@ class App extends Backbone.Marionette.Application
   initialize: ->
     console.log 'Initializing App'
 
-    @router = new Backbone.Marionette.AppRouter()
-
     @addInitializer( (options) =>
       (new AppView()).render()
     )
@@ -28,6 +26,7 @@ class App extends Backbone.Marionette.Application
     )
 
     @addInitializer( (options) =>
+      @router = new Backbone.Marionette.AppRouter()
       Backbone.history.start()
     )
 

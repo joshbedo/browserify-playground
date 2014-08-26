@@ -26,8 +26,8 @@ module.exports = class MainView extends Backbone.Marionette.CompositeView
   addTodo: (e) ->
     e.preventDefault()
 
-    data = Backbone.Syphon.serialize(@)
-    @collection.add(new Todo({ text: data.todo }))
+    #data = Backbone.Syphon.serialize(@)
+    @collection.add(new Todo({ text: "test" }))
 
     @render()
     @vent.trigger 'new:notification', 'Added todo: ' + data.todo
