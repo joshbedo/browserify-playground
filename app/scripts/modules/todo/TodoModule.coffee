@@ -14,8 +14,9 @@ module.exports = class TodoModule extends BaseModule
       { text: "Learn Browserify+Marionette", done: true }
     ])
 
+    debugger
     @app.router.processAppRoutes @, {
-      'todo/:text', 'showTodo'
+      'todo/:text': 'showTodo'
     }
 
   onStart: ->

@@ -1,8 +1,15 @@
-Todo = require '../models/Todo'
+TodoModel = require '../models/Todo'
+console.log TodoModel
 
-module.exports = class Todo extends Backbone.Collection
-  model: Todo
+class Todo extends Backbone.Collection
+  model: TodoModel
+
+  intialize: ->
+    debugger
 
   showTodo: (text) ->
     _.each @where(text:text), (todo) ->
       todo.toggleActive()
+
+
+module.exports = Todo
